@@ -13,7 +13,7 @@ app.use(adminRoutes);
 app.use(shopRoutes);
 
 app.use((req, res, next) => {
-  res.status(404).send(<p>Page not found!</p>);
+  res.status(404).send("<p>Page not found!</p>");
 });
 
 app.listen(3000);
