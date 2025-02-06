@@ -13,7 +13,7 @@ module.exports = class Product {
       "products.json"
     );
 
-    fs.readFile(path, (err, fileContent) => {
+    fs.readFile(p, (err, fileContent) => {
       let products = [];
       if (!err) {
         products.JSON.parse(fileContent);
